@@ -8,7 +8,8 @@
           <field name="type">calendar</field>
           <field name="arch" type="xml">
             <field name="partner_id" position="after">
-              <field name="is_validated" />
+              
+              <field name="validation" widget="label_selection"  options="{'classes': {'false': 'danger', 'true': 'success'}}" />
             </field>
           </field>
     </record>
@@ -20,7 +21,8 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
               <field name="description" position="after">
-                <field name="is_validated" string="Is validated"  force_save="1"/>
+                <field name="validation"/>
+               <!-- <field name="is_validated" string="Is validated"  force_save="1"/>-->
               </field>
             </field>
     </record>
@@ -32,8 +34,10 @@
             <field name="type">search</field>
             <field name="arch" type="xml">
               <filter name="recurrent" position="before">
+              <!--
                 <filter string="Validated" name="validated" domain="[('is_validated','=', True)]" />
                 <filter string="Not Validated" name="not_validated" domain="[('is_validated', '=', False)]" />
+                -->
               </filter>
             </field>
     </record>
