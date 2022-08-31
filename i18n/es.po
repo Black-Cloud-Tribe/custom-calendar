@@ -1,0 +1,40 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* custom-calendar
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: custom-calendar
+#: model:ir.model,name:custom-calendar.model_calendar_event
+msgid "Custom calendar event model"
+msgstr "Modelo customizado de Calendar Event"
+
+#. module: custom-calendar
+#: model:ir.model.fields,help:custom-calendar.field_calendar_event__is_validated
+msgid "If the meeting is validated"
+msgstr "Si la reunión ha sido validada"
+
+#. module: custom-calendar
+#: model:ir.model.fields,field_description:custom-calendar.field_calendar_event__is_validated
+#: model_terms:ir.ui.view,arch_db:custom-calendar.event_form_view_inherit
+msgid "Is validated"
+msgstr "Esta Validada"
+
+#. module: custom-calendar
+#: model_terms:ir.ui.view,arch_db:custom-calendar.event_search_view_inherit
+msgid "Not Validated"
+msgstr "No Validada"
+
+#. module: custom-calendar
+#: model_terms:ir.ui.view,arch_db:custom-calendar.event_search_view_inherit
+msgid "Validated"
+msgstr "Validada"

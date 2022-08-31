@@ -11,4 +11,4 @@ class custom_calendar_event(models.Model):
     _description = 'Custom calendar event model'
     _inherit = ['calendar.event']
 
-    is_validated = fields.Boolean(default=False,string="Is validated", help="If the meeting is validated")
+    is_validated = fields.Boolean(default=False,string="Is validated", help="If the meeting is validated", translate=True)
